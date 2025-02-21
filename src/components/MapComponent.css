@@ -1,0 +1,126 @@
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #f8f9fa !important;
+  background: white !important;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background: white;
+  border-radius: 4px;
+  padding: 8px;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.custom-popup .leaflet-popup-tip-container {
+  margin-top: -1px;
+  width: 30px;
+  height: 15px;
+}
+
+/* PTV Vector tile styles */
+.ptv-vector-tile {
+  background-color: #f8f9fa;
+}
+
+.ptv-vector-tile path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.ptv-vector-tile .highway {
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.ptv-vector-tile .major-road {
+  stroke: #ffd700;
+  stroke-width: 1.5;
+}
+
+.map-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin: 12px !important;
+}
+
+.leaflet-control-container .leaflet-control {
+  z-index: 1000;
+}
+
+/* Fix marker icon paths */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png);
+}
+
+.leaflet-default-shadow-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png);
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-marker-icon {
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.leaflet-marker-shadow {
+  opacity: 0.7;
+}
+
+.leaflet-tile-container img {
+  width: 256px !important;
+  height: 256px !important;
+  filter: none !important;
+}
+
+.start-marker {
+  filter: hue-rotate(120deg);
+}
+
+.end-marker {
+  filter: hue-rotate(240deg);
+}
+
+.waypoint-marker {
+  filter: hue-rotate(60deg);
+}
+
+/* Fix for gray background */
+.leaflet-layer {
+  background-color: white !important;
+}
+
+.leaflet-tile-container {
+  filter: none !important;
+}
+
+.leaflet-tile {
+  filter: none !important;
+}
+
+.leaflet-tile-pane {
+  opacity: 1 !important;
+  filter: none !important;
+}
